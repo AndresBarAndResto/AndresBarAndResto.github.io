@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+      #more {display: none;}
+      </style>
     <title>Home</title>
 </head>
 <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-expand-lg p-md-3 bg-black bg-opacity-25">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-expand-lg p-md-3">
             <div class="container">
               <a class="navbar-brand" href="#"><img src="/img/Andreslogo.png" class="rounded-circle" height="80px" width="80px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +38,6 @@
                     <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
                   </svg> Contact Us</a></button>
                 </span>
-                
               </div>
             </div>
           </nav>
@@ -58,9 +60,11 @@
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <img src="/img/Stuffed-Squid.jpg" style="width: 100%;">
-              <h5 class="card-title">Rellenong Pusit</h5>
-              <p class="card-text">The word “relleno” means stuffed in Spanish. This recipe calls for large squid to be stuffed with cooked ground pork. The outer part is coated with flour. The squid is then pan-fried until done.</p>
+              <img src="/img/sisig.jpg" style="width: 100%;">
+              <h5 class="card-title">Pork Sisig</h5>
+              <p class="card-text">
+              <p>Traditionally, sisig takes all the good parts from a pig's head – specifically the cheeks, snout, and ears – along with<span id="dots">...</span><span id="more"> the liver and belly, simmers them in water, and then they're chopped into small pieces and fried. The mixture is spiced with chili peppers and calamansi, a small green citrus fruit that resembles a lime, and finally mixed with egg, onion, and sometimes mayo.</span></p>
+              <button onclick="myFunction()" id="myBtn" class="btn">Read more</button>
               <a href="#" class="btn btn-primary">Order Now!</a>
             </div>
           </div>
@@ -68,7 +72,7 @@
       </div>
     </div>
     <!-- Slider -->
-    <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="/img/bulaloHD.jpg" class="d-block w-100" alt="...">
